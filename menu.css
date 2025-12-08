@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px 10px;
+  font-family: "Georgia", "Times New Roman", serif;
+  background: #2b1510;              /* marron foncé */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;           /* les pages l’une sous l’autre */
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* --- PAGE DE GARDE VIBE COFFEE --- */
+
+.cover-page {
+  text-align: center;
+  padding: 40px;
+  border: 8px solid #e0a727;     /* doré */
+  background: #3a1c11;           /* marron */
+  width: 80%;
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.cover-logo {
+  width: 220px;
+  height: auto;
+  filter: sepia(1) saturate(300%) hue-rotate(10deg) brightness(5.1);
+  margin-bottom: 30px;
+}
+
+.cover-title {
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #f7c546;                /* doré */
+}
+
+.cover-subtitle {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* Optionnel si tu veux que la cover soit une vraie page séparée */
+.cover-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.page {
+  max-width: 800px;                 /* largeur type A4 écran */
+  width: 100%;
+  margin: 20px auto;
+  padding: 40px 50px 60px;
+  background: #3a1c11;              /* fond marron */
+  border: 6px solid #e0a727;        /* cadre doré */
+  position: relative;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  height: 90px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #f7c546;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.title-underline {
+  width: 60%;
+  height: 3px;
+  margin: 0 auto 35px;
+  background: #f7c546;
+}
+
+.item {
+  margin-bottom: 18px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.item-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f7e0a8;
+}
+
+.item-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f7c546;
+  white-space: nowrap;
+}
+
+.item-desc {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff6df;
+  padding-left: 10px;
+}
+
+/* Petits titres : GLACES / DESSERT / VENNOISERIES */
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  color: #f7e0a8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section-title.center {
+  text-align: center;
+}
+
+.section-underline {
+  width: 40%;
+  height: 3px;
+  background: #f7c546;
+  margin: 0 0 25px;
+}
+
+.section-underline.center {
+  margin: 0 auto 25px;
+}
+
+/* Colonnes DESSERT / VIENNOISERIES */
+.menu-columns {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.menu-column {
+  flex: 1 1 220px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .page {
+    padding: 25px 18px 35px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .title-underline {
+    width: 80%;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .item-name {
+    font-size: 18px;
+  }
+
+  .item-price {
+    font-size: 16px;
+  }
+
+  .item-desc {
+    font-size: 13px;
+  }
+
+  .menu-columns {
+    gap: 20px;
+  }
+}
+/* Fin du fichier menu.css */
